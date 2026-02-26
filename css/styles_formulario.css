@@ -1,0 +1,97 @@
+/* Estilos adicionales para el formulario */
+.formulario-contacto {
+    max-width: 60%; /* Aumenta el ancho máximo en pantallas pequeñas */
+    margin: 80px auto 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto h2 {
+    color: #b30000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario-contacto hr {
+    border: 1px solid #b30000;
+    margin: 10px 0;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto select,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario-contacto textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.formulario-contacto button {
+    background-color: #b30000;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #a30000;
+}
+
+.formulario-contacto .grupo-formulario {
+    margin-bottom: 20px;
+}
+
+.formulario-contacto .grupo-formulario .fila-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.formulario-contacto .grupo-formulario .fila-formulario .columna-formulario {
+    flex: 1;
+    min-width: 0; /* Permite que las columnas se ajusten en pantallas pequeñas */
+}
+
+.formulario-contacto .grupo-formulario .fila-formulario .columna-formulario input,
+.formulario-contacto .grupo-formulario .fila-formulario .columna-formulario select {
+    width: 100%;
+}
+
+.politica {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.politica input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.politica a {
+    color: #b30000;
+    text-decoration: none;
+}
+
+.politica a:hover {
+    text-decoration: underline;
+}

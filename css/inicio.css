@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+    color: #333;
+    height: 100vh;
+    overflow: hidden; /* Evita el scroll en toda la página */
+}
+
+/* Contenedor principal */
+.login-contenedor {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* No permite el desbordamiento */
+}
+
+/* Barra de Menú Superior */
+.barra-superior {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: fixed; /* Para que se quede fijo en la parte superior */
+    top: 0;
+    right: 0; /* Alinea el menú a la derecha */
+    width: calc(100% - 50.5%); /* Ajusta el tamaño para dejar espacio a la imagen */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease-in-out;
+}
+
+.barra-superior-logo {
+    flex: 1;
+    padding-left: 20px; /* Espacio para el logo */
+}
+
+.barra-superior-logo img {
+    height: 40px; /* Tamaño del Logo */
+    width: auto;
+    border-radius: 5px;
+}
+
+.barra-superior-menu {
+    display: flex;
+    gap: 15px;
+    flex: 3;
+    justify-content: flex-end;
+}
+
+.barra-superior a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.barra-superior a:hover {
+    background-color: #b30000;
+    border-radius: 5px;
+}
+
+/* Imagen del lado izquierdo */
+.login-imagen {
+    flex: 1;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.login-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-imagen img:hover {
+    transform: scale(1.2);
+}
+
+/* Formulario del lado derecho */
+.login-formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    border-left: 1px solid #ccc;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* Espacio debajo del menú */
+    overflow: hidden; /* Evita desbordamiento */
+}
+
+.login-formulario h2 {
+    color: #b30000;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.campo {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.campo input:focus {
+    border-color: #b30000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(179, 0, 0, 0.5);
+}
+
+.boton {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #b30000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #ff4d4d;
+}
+
+.login-formulario p {
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.login-formulario a {
+    color: #b30000;
+    text-decoration: none;
+}
+
+.login-formulario a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: fixed; /* Para que se quede fijo en la parte inferior */
+    bottom: 0;
+    right: 0; /* Alinea el footer a la derecha */
+    width: calc(100% - 50%); /* Ajusta el tamaño para dejar espacio a la imagen */
+    z-index: 1000;
+}

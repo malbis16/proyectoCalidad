@@ -1,0 +1,5 @@
+# Ignorar carpeta de base de datos
+bd/
+
+# Ignorar carpeta de imágenes
+images/

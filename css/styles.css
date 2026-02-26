@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Barra de Menú Superior */
+.barra-superior {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease-in-out;
+    padding-right: 60px; /* Aumenta el espacio a la derecha para el scroll */
+}
+
+.barra-superior-logo {
+    flex: 1;
+}
+
+.barra-superior-logo img {
+    height: 40px; /* Tamaño del Logo */
+    width: auto;
+    border-radius: 5px;
+}
+
+.barra-superior-menu {
+    display: flex;
+    gap: 15px;
+    flex: 3;
+    justify-content: flex-end;
+    margin-right: 25px; /* Espacio necesario que la barra de scroll no se ponga por encima */
+}
+
+.barra-superior a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.barra-superior a:hover {
+    background-color: #b30000;
+    border-radius: 5px;
+}
+
+/* Menú de Pie de Página */
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.enlaces {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.enlaces a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.enlaces a:hover {
+    text-decoration: underline;
+}

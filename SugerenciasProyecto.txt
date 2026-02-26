@@ -1,0 +1,7 @@
+Asistente virtual, en forma de carrito. chatea con nosotros. (Opcional)
+
+Iconos de las redes sociales. En los contactos. (Opcional)
+
+-----------------------------------------------------------------------
+
+modelo vista controlador, chatGTP

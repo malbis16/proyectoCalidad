@@ -1,0 +1,86 @@
+/* Contenido Principal */
+.contenido {
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* Sección de Autos Destacados */
+.autos-destacados {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.autos-destacados h3.titulo-seccion {
+    color: #b30000;
+    margin: 0;
+    text-align: center;
+}
+
+.autos-destacados hr {
+    border: none;
+    height: 2px;
+    background-color: #b30000;
+    margin: 10px 0;
+}
+
+/* Tarjetas de Vehículos */
+.tarjetas-autos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta-auto {
+    background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 45%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.tarjeta-auto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta-auto:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-auto h4 {
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.tarjeta-auto p {
+    color: #555;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.tarjeta-auto .btn {
+    display: inline-block;
+    background-color: #b30000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tarjeta-auto .btn:hover {
+    background-color: #a10000;
+}

@@ -1,0 +1,121 @@
+/* Contenido */
+.contenido {
+    padding: 10px;
+    margin: 80px auto 30px; /* Margen ajustado para el contenedor */
+    max-width: 1230px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.contenido h1 {
+    color: #b30000;
+    font-size: 2.5em; /* Tamaño aumentado del título */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contenido hr {
+    border: none;
+    height: 2px;
+    background-color: #b30000;
+    margin: 10px 0;
+}
+
+.contenido p1 {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 50px;
+}
+
+.contenido p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 0 50px;
+    text-align: justify;
+}
+
+/* Carrusel */
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel-contenedor-pista {
+    overflow: hidden;
+}
+
+.carrusel-pista {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.control-carrusel {
+    background-color: transparent;
+    border: 0;
+    color: #b30000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.control-carrusel:hover {
+    background-color: #b30000;
+    color: #ffffff;
+}
+
+.control-carrusel.anterior {
+    left: 10px;
+}
+
+.control-carrusel.siguiente {
+    right: 10px;
+}
+
+/* Tarjetas de vehículos */
+.tarjeta-vehiculo {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-vehiculo img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-vehiculo {
+    padding: 20px;
+    width: 50%;
+    text-align: center; /* Centrar texto horizontalmente */
+}
+
+.info-vehiculo h2 {
+    color: #b30000;
+    font-size: 1.5em; /* Tamaño aumentado del título */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-vehiculo p {
+    color: #333;
+    font-size: 16px; /* Tamaño del texto ajustado */
+    margin: 10px 0;
+}

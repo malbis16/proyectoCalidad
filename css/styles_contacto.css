@@ -1,0 +1,183 @@
+/* Estilo de la imagen y texto superpuestos */
+.seccion-hero {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #b30000;
+}
+
+.imagen-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.texto-hero {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.texto-hero h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.texto-hero p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+/* Fondo de la Página */
+.fondo {
+    padding: 100px 20px 40px;
+}
+
+/* Estilo de las Tarjetas de Sucursales */
+.sucursales {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: -105px;
+}
+
+.sucursales h2 {
+    color: #b30000;
+    margin-bottom: 20px;
+}
+
+.sucursales hr {
+    border: none;
+    height: 2px;
+    background-color: #b30000;
+    margin: 10px 0;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.imagen-tarjeta {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.info-tarjeta h3 {
+    color: #b30000;
+    margin-top: 0;
+}
+
+.info-tarjeta p {
+    margin: 5px 0;
+}
+
+/* Estilo del Formulario de Contacto */
+.contacto {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.contacto h2 {
+    color: #b30000;
+    margin: 0;
+    text-align: center;
+}
+
+.contacto hr {
+    border: none;
+    height: 2px;
+    background-color: #b30000;
+    margin: 10px 0;
+}
+
+.fila-formulario {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grupo-formulario {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.grupo-formulario input,
+.grupo-formulario textarea,
+.grupo-formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.grupo-formulario textarea {
+    height: 150px;
+}
+
+.contacto button {
+    background-color: #b30000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.contacto button:hover {
+    background-color: #800000;
+}

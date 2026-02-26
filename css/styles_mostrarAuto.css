@@ -1,0 +1,230 @@
+/* Contenedor para el título del vehículo y el precio */
+.contenedor-titulo-precio-vehiculo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 90px 10px 20px;
+    padding: 0 10px;
+}
+
+/* Título del vehículo */
+.titulo-vehiculo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #b30000;
+    margin: 0;
+}
+
+/* Precio del vehículo */
+.precio-vehiculo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #b30000;
+    margin: 0;
+}
+
+/* Línea horizontal debajo del título del vehículo */
+.divisor-titulo-vehiculo {
+    border: none;
+    height: 2px;
+    background-color: #b30000;
+    margin: 10px 0;
+}
+
+/* Contenedor para las imágenes del vehículo */
+.contenedor-imagenes-vehiculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; /* Espacio a los lados */
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Estilo de las imágenes del vehículo */
+.contenedor-imagenes-vehiculo img {
+    max-width: 33.33%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de zoom al pasar el cursor sobre las imágenes */
+.contenedor-imagenes-vehiculo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor para los colores disponibles y el botón */
+.contenedor-colores-boton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Opciones de color */
+.opciones-color {
+    display: flex;
+    flex-direction: column;
+}
+
+.opciones-color-interno {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.muestra-color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.muestra-color:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón para solicitar información */
+.boton-solicitar-info {
+    background-color: #b30000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-solicitar-info:hover {
+    background-color: #a30000;
+    transform: scale(1.05);
+}
+
+/* Características del Vehículo */
+p {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.detalles-vehiculo {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Contenido de la tarjeta de características */
+.contenido-tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilo del texto dentro de la tarjeta */
+.texto-tarjeta {
+    flex: 1;
+}
+
+/* Estilo de la imagen dentro de la tarjeta */
+.imagen-tarjeta img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la tarjeta */
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones de características */
+.botones-detalles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.boton-pestana {
+    background-color: #b30000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-pestana:hover {
+    background-color: #a30000;
+    transform: scale(1.05);
+}
+
+/* Contenido de pestañas */
+.contenido-pestana {
+    display: none;
+}
+
+.contenido-pestana h2 {
+    color: #b30000;
+    margin-bottom: 15px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para dispositivos móviles en orientación vertical */
+@media (max-width: 600px) {
+    .contenedor-titulo-precio-vehiculo {
+        flex-direction: column; /* Apilar título y precio en pantallas pequeñas */
+        align-items: flex-start;
+    }
+
+    .titulo-vehiculo {
+        font-size: 1.8em; /* Reducir tamaño del título */
+    }
+
+    .precio-vehiculo {
+        font-size: 1.5em; /* Reducir tamaño del precio */
+    }
+
+    .contenedor-imagenes-vehiculo {
+        flex-direction: column; /* Apilar imágenes en pantallas pequeñas */
+        gap: 10px;
+    }
+
+    .contenedor-imagenes-vehiculo img {
+        max-width: 100%; /* Imagen a tamaño completo en pantallas pequeñas */
+    }
+
+    .contenedor-colores-boton {
+        flex-direction: column; /* Apilar opciones de color y botón en pantallas pequeñas */
+        align-items: flex-start;
+    }
+
+    .opciones-color-interno {
+        flex-wrap: wrap; /* Ajustar opciones de color para pantallas pequeñas */
+    }
+
+    .muestra-color {
+        width: 25px; /* Reducir tamaño del swatch en pantallas pequeñas */
+        height: 25px;
+    }
+}

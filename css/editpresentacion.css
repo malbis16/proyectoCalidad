@@ -1,0 +1,160 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Encabezados */
+h2, h3 {
+    text-align: center;
+    color: #b30000;
+    font-size: 30px;
+}
+
+/* Barra de Menú Superior */
+.barra-superior {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease-in-out;
+    padding-right: 60px;
+}
+
+.barra-superior-logo {
+    flex: 1;
+}
+
+.barra-superior-logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.barra-superior-menu {
+    display: flex;
+    gap: 15px;
+    flex: 3;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.barra-superior a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.barra-superior a:hover {
+    background-color: #b30000;
+    border-radius: 5px;
+}
+
+/* Formulario general */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"], input[type="date"], textarea, select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Estilo de los botones */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #b30000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: auto;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+button:active {
+    background-color: #449d44;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Barra de selección */
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las imágenes */
+p img {
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+/* Menú de Pie de Página */
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5px;
+}
