@@ -125,8 +125,8 @@ if (isset($_POST['idProx']) && $_POST['idProx'] != '') {
             <label for="desProx">Descripción</label>
             <textarea id="desProx" name="desProx" required><?php echo $registro['desProx']; ?></textarea>
 
-            <label for="imagenProx">Imagen</label>
-            <input type="file" id="imagenProx" name="imagenProx">
+            <label for="imagenProx">Imagen</label>            
+            <input type="file" id="imagenProx" name="imagenProx" accept=".jpg, .jpeg, .png">
             <p>Imagen actual: <img src="<?php echo $registro['imagenProx']; ?>" alt="" style="width:100px;"></p>
 
             <button type="submit" name="accion" value="editar">Editar</button>
@@ -139,15 +139,22 @@ if (isset($_POST['idProx']) && $_POST['idProx'] != '') {
             <label for="nombreProx">Nombre</label>
             <input type="text" id="nombreProx" name="nombreProx" required>
 
+            <?php 
+            // 1. Fecha actual para el límite mínimo
+            $fechaHoy = date('Y-m-d');             
+            // 2. Fecha máxima 5 años
+            $fechaMax = date('Y-m-d', strtotime('+5 years')); 
+            ?>
+
             <label for="fechaProx">Fecha</label>
-            <input type="date" id="fechaProx" name="fechaProx" required>
+            <input type="date" id="fechaProx" name="fechaProx" min="<?php echo $fechaHoy; ?>" max="<?php echo $fechaMax; ?>" required>
+            
 
             <label for="desProx">Descripción</label>
             <textarea id="desProx" name="desProx" required></textarea>
 
-            <label for="imagenProx">Imagen</label>
-            <input type="file" id="imagenProx" name="imagenProx" required>
-
+            <label for="imagenProx">Imagen</label>            
+            <input type="file" id="imagenProx" name="imagenProx" accept=".jpg, .jpeg, .png" required>
             <button type="submit" name="accion" value="agregar">Agregar</button>
         </form>
     </div>
